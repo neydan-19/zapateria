@@ -26,6 +26,11 @@
 
 	}
 
+	public function show($id_zapato){
+		$stament = $this->cnx->prepare("SELECT * FROM dbozapato where id_zapato = :id_zapato limit 1");
+		$stament->bindParam(":id_zapato",$id_zapato);
+		return ($stament->execute()) ? $stament->fetch() : false ;
+	}
 
  }
 

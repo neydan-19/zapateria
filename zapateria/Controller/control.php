@@ -15,6 +15,10 @@ class control{
 
 	}
 
+	public function show($id_zapato){
+		return ($this->MODEL->show($id_zapato) != false) ? $this->MODEL->show($id_zapato) : header("Location:home.php");
+	}
+
 }
 
 ?>

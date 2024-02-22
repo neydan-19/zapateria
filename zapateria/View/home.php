@@ -36,7 +36,7 @@
 					<td class="center-align"><?php echo $k->id_genero; ?></td>
 					<td class="center-align"><?php echo $k->cantidad; ?></td>
 					<td class="center-align">
-                        <a href="show.php?id=<?= $row[0]?>" class="btn btn-primary">Ver</a>
+                        <a href="show.php?id_zapato=<?= $k->id_zapato?>" class="btn btn-primary">Ver</a>
                         <a href="edit.php?id=<?= $row[0]?>" class="btn btn-success">Modificar</a>
                         <!-- Button trigger modal -->
                         <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#id<?=$row[0]?>">Eliminar</a>
